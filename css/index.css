@@ -386,6 +386,13 @@ img {
   justify-content: center;
 }
 /*==================== SKILLS ====================*/
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 1.5rem; /* Space between columns */
+  padding-left: 0; /* Remove left padding for better alignment */
+}
+
 .skills__container {
   row-gap: 0;
 }
@@ -436,10 +443,7 @@ img {
   display: block;
   background-color: var(--first-color);
 }
-.skills__list {
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
-}
+
 .skills__html {
   width: 90%;
 }
@@ -477,14 +481,7 @@ img {
   width: 75%;
 }
 
-.skills__close .skills__list {
-  height: 0;
-  overflow: hidden;
-}
-.skills__open .skills__list {
-  height: max-content;
-  margin-bottom: var(--mb-2-5);
-}
+
 .skills__open .skills__arrow {
   transform: rotate(-180deg);
 }
@@ -661,32 +658,43 @@ img {
 .portfolio__button:hover .button__icon {
   transform: translateX(0.25rem);
 }
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: "";
+.portfolio-card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.portfolio-card{
+  width: 325px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
 
-  display: none;
 }
-.swiper-portfolio-icon {
-  font-size: 2rem;
-  color: var(--first-color);
+.portfolio-image{
+  width: 100%;
+  height: auto;
 }
-.swiper-button-next {
-  right: -0.5rem;
+.portfolio-card-content{
+  padding: 16px;
 }
-.swiper-button-prev {
-  left: -0.5rem;
+.portfolio-card-content h3{
+  font-size: 28px;
+  margin-bottom: 8px;  
 }
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: -2.5rem;
+.portfolio-card-content p{
+  color: #666;
+  font-size: 15px;
 }
-.swiper-pagination-bullet-active {
-  background-color: var(--first-color);
-}
-.swiper-button-prev,
-.swiper-button-next,
-.swiper-pagination-bullet {
-  outline: none;
+.portfolio-card-btn{
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: #fff;
 }
 /*==================== PROJECT IN MIND ====================*/
 .project {
