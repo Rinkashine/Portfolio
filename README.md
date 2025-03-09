@@ -10,5 +10,5 @@ Welcome to my personal web development portfolio! I'm a full-stack developer wit
 - The "Projects" section highlights the key projects I've worked on.
 
 ## Contact:
-You can reach me at [email@example.com](mailto:email@example.com) for collaboration, job opportunities, or any inquiries.
+You can reach me at [markjosephmanalo1110@gmail.com](mailto:markjosephmanalo1110@gmail.com) for collaboration, job opportunities, or any inquiries.
 
